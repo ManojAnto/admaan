@@ -3,45 +3,74 @@
 <head>
 <title>ADMAAN DESIGNS</title>
 <link rel="stylesheet" href="css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
 <header>
-<div class="container navbar">
-<div class="logo">ADMAAN DESIGNS</div>
+  <div class="container navbar">
+    <div class="logo">ADMAAN DESIGNS</div>
 
-<div onclick="toggleMenu()" style="cursor:pointer;">☰</div>
+    <div class="menu-btn" id="menuBtn" aria-label="Open menu" role="button">☰</div>
 
-<nav id="nav">
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="services.html">Services</a></li>
-<li><a href="projects.html">Projects</a></li>
-<li><a href="clients.html">Clients</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
-</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="clients.html">Clients</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
 <section class="hero">
-<div>
-<h1>We Design. We Build. You Trust.</h1>
-<p>Industrial & Commercial Construction Experts</p>
-<a class="btn" href="contact.html">Get Quote</a>
-</div>
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <h1>We Design. We Build. You Trust.</h1>
+      <p>Industrial &amp; Commercial Construction Experts</p>
+      <a class="btn" href="contact.html">Get Quote</a>
+    </div>
+
+    <div class="hero-media">
+      <img src="images/hero-large.svg" alt="Construction project" loading="lazy">
+      <div class="hero-thumbs">
+        <div class="hero-thumb"><img src="images/thumb1.svg" alt="" loading="lazy"></div>
+        <div class="hero-thumb"><img src="images/thumb2.svg" alt="" loading="lazy"></div>
+        <div class="hero-thumb"><img src="images/thumb3.svg" alt="" loading="lazy"></div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section>
-<div class="container grid">
+  <div class="container">
+    <div class="section-title">
+      <h2>Our Highlights</h2>
+      <p>Delivering quality construction services across industrial and commercial sectors.</p>
+    </div>
 
-<div class="card">10+ Years Experience</div>
-<div class="card">50+ Projects</div>
-<div class="card">25+ Experts</div>
-<div class="card">100% Quality Commitment</div>
+    <div class="grid">
+      <div class="card"><h3>10+ Years Experience</h3><p class="muted">Proven track record across major projects.</p></div>
+      <div class="card"><h3>50+ Projects</h3><p class="muted">Successful deliveries in industrial &amp; commercial domains.</p></div>
+      <div class="card"><h3>25+ Experts</h3><p class="muted">Engineers, architects and skilled workforce.</p></div>
+      <div class="card"><h3>Safety &amp; Quality</h3><p class="muted">Rigorous standards and transparent processes.</p></div>
+    </div>
+  </div>
+</section>
 
-</div>
+<section>
+  <div class="container">
+    <div class="section-title"><h2>Recent Projects</h2></div>
+    <div class="grid">
+      <div class="card">Industrial Truss &amp; Fabrication</div>
+      <div class="card">Dairy Plant Flooring &amp; Silos</div>
+      <div class="card">Commercial Buildings</div>
+      <div class="card">Warehouse &amp; Industrial yards</div>
+    </div>
+  </div>
 </section>
 
 <footer>© 2026 ADMAAN DESIGNS</footer>
