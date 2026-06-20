@@ -3,41 +3,85 @@
 <head>
 <title>Contact - ADMAAN DESIGNS</title>
 <link rel="stylesheet" href="css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
 <header>
-<div class="container navbar">
-<div class="logo">ADMAAN DESIGNS</div>
-<nav>
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="services.html">Services</a></li>
-<li><a href="projects.html">Projects</a></li>
-<li><a href="clients.html">Clients</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
-</div>
+  <div class="container navbar">
+    <div class="logo">ADMAAN DESIGNS</div>
+    <div class="menu-btn" id="menuBtn" aria-label="Open menu" role="button">☰</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="clients.html">Clients</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
 <section>
-<div class="container">
+  <div class="container">
+    <div class="section-title">
+      <h2>CONTACT US</h2>
+      <p>Get in touch for project inquiries, quotes or partnerships</p>
+    </div>
 
-<h2>Contact Us</h2>
+    <div class="content-columns">
+      <div class="left">
+        <h3>Contact Details</h3>
+        <p><strong>Address:</strong> No.13/A, Kalyan Nagar 1st Street, West Tambaram - 600 045</p>
+        <p><strong>Branch:</strong> No.5/9, Thandu Mariyamman Koil St, Mathuranthakam - 603 306</p>
+        <p><strong>Phone:</strong> 720 011 3319 / 70107 65750</p>
+        <p><strong>Email:</strong> admaandesigns@gmail.com</p>
 
-<form>
-<input type="text" placeholder="Name"><br><br>
-<input type="email" placeholder="Email"><br><br>
-<textarea placeholder="Message"></textarea><br><br>
-<button class="btn">Send</button>
-</form>
+        <h3 style="margin-top:18px">Quick Inquiry</h3>
+        <form>
+          <input type="text" placeholder="Your Name" required style="width:100%;padding:12px;border-radius:8px;border:1px solid #e6eefc;margin-bottom:10px">
+          <input type="email" placeholder="Email Address" required style="width:100%;padding:12px;border-radius:8px;border:1px solid #e6eefc;margin-bottom:10px">
+          <textarea placeholder="Tell us about your project" style="width:100%;padding:12px;border-radius:8px;border:1px solid #e6eefc;min-height:120px;margin-bottom:10px"></textarea>
+          <button class="btn" type="submit">Send Inquiry</button>
+        </form>
+      </div>
 
-</div>
+      <aside class="panel">
+        <h3>Company Information</h3>
+        <table style="width:100%;border-collapse:collapse;color:#fff;margin-top:12px">
+          <tr style="border-bottom:1px solid rgba(255,255,255,0.06)"><td style="padding:10px;font-weight:700">Company Name</td><td style="padding:10px">ADMAAN DESIGNS</td></tr>
+          <tr style="border-bottom:1px solid rgba(255,255,255,0.06)"><td style="padding:10px;font-weight:700">Established</td><td style="padding:10px">2016</td></tr>
+          <tr style="border-bottom:1px solid rgba(255,255,255,0.06)"><td style="padding:10px;font-weight:700">Experience</td><td style="padding:10px">10+ Years</td></tr>
+          <tr style="border-bottom:1px solid rgba(255,255,255,0.06)"><td style="padding:10px;font-weight:700">Type of Business</td><td style="padding:10px">Industrial & Commercial Civil Contractor</td></tr>
+          <tr style="border-bottom:1px solid rgba(255,255,255,0.06)"><td style="padding:10px;font-weight:700">Office Locations</td><td style="padding:10px">Chennai &amp; Tindivanam</td></tr>
+          <tr style="border-bottom:1px solid rgba(255,255,255,0.06)"><td style="padding:10px;font-weight:700">Team Strength</td><td style="padding:10px">15+ Technical Staff</td></tr>
+          <tr style="border-bottom:1px solid rgba(255,255,255,0.06)"><td style="padding:10px;font-weight:700">Design Projects</td><td style="padding:10px">50+ Projects</td></tr>
+          <tr><td style="padding:10px;font-weight:700">Construction Projects</td><td style="padding:10px">30+ Projects</td></tr>
+        </table>
+
+        <div style="margin-top:18px">
+          <h3 style="color:var(--primary)">Our Clients</h3>
+          <div class="clients-logos" style="margin-top:10px">
+            <img src="logos/cavinkare.svg" alt="Cavinkare" loading="lazy">
+            <img src="logos/thirumala.svg" alt="Thirumala" loading="lazy">
+            <img src="logos/ryans.svg" alt="Ryans" loading="lazy">
+            <img src="logos/vgn.svg" alt="VGN" loading="lazy">
+            <img src="logos/srk.svg" alt="SRK" loading="lazy">
+            <img src="logos/aniruth.svg" alt="Aniruth" loading="lazy">
+            <img src="logos/modern.svg" alt="Modern" loading="lazy">
+            <img src="logos/arcicon.svg" alt="Arcicon" loading="lazy">
+          </div>
+        </div>
+      </aside>
+    </div>
+
+  </div>
 </section>
 
 <footer>© 2026 ADMAAN DESIGNS</footer>
 
+<script src="js/main.js"></script>
 </body>
 </html>
