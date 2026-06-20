@@ -1,119 +1,115 @@
-
+/* Improved stylesheet inspired by brochure design
+   - modern color palette, improved hero, cards, sections
+   - responsive navbar and mobile menu
+   - utilities for section titles and grids
+*/
 :root{
-    --primary:#2563eb;
+    --primary:#0f4bd8; /* vivid blue */
+    --primary-600:#1d4ed8;
+    --accent:#60a5fa;
     --dark:#0f172a;
-    --text:#475569;
+    --text:#334155;
+    --muted:#64748b;
     --light:#f8fafc;
+    --card:#ffffff;
 }
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Segoe UI, sans-serif;
-}
-
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
 body{
-    background:#fff;
+    font-family: "Segoe UI", Roboto, system-ui, -apple-system, "Helvetica Neue", Arial;
     color:var(--text);
+    background:var(--light);
+    -webkit-font-smoothing:antialiased;
 }
 
-a{
-    text-decoration:none;
-}
+.container{width:min(92%,1200px);margin:0 auto}
 
-.container{
-    width:90%;
-    max-width:1200px;
-    margin:auto;
-}
-
+/* Header / Navbar */
 header{
-    background:#fff;
-    position:sticky;
-    top:0;
-    z-index:1000;
-    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+    position:sticky;top:0;z-index:1000;
+    background:rgba(255,255,255,0.96);
+    backdrop-filter:blur(6px);
+    box-shadow:0 6px 20px rgba(15,23,42,0.06);
 }
+.navbar{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+.logo{font-weight:800;color:var(--primary);font-size:1.25rem}
 
-.navbar{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:15px 0;
-}
+nav ul{display:flex;gap:20px;align-items:center;list-style:none}
+nav a{color:var(--dark);font-weight:600;text-decoration:none}
+nav a:hover{color:var(--primary)}
 
-.logo{
-    font-size:22px;
-    font-weight:800;
-    color:var(--primary);
-}
+.menu-btn{display:none;font-size:26px;cursor:pointer;color:var(--dark);padding:6px}
 
-nav ul{
-    display:flex;
-    list-style:none;
-    gap:20px;
-}
+/* Hero */
+.hero{min-height:78vh;display:flex;align-items:center;padding:60px 0;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg, rgba(15,23,42,0.55), rgba(37,99,235,0.2));mix-blend-mode:multiply}
+.hero-inner{display:grid;grid-template-columns:1fr 520px;gap:40px;align-items:center;width:100%}
+.hero-text{position:relative;color:#fff;z-index:2}
+.hero h1{font-size:2.5rem;margin-bottom:12px;line-height:1.05}
+.hero p{color:rgba(255,255,255,0.9);margin-bottom:18px}
+.hero .btn{background:var(--primary);padding:12px 22px;border-radius:10px;color:#fff;display:inline-block;text-decoration:none;font-weight:700}
 
-nav a{
-    color:var(--dark);
-    font-weight:600;
-}
+.hero-media{position:relative;border-radius:14px;overflow:hidden;z-index:2}
+.hero-media img{width:100%;height:100%;object-fit:cover;display:block}
+.hero-thumbs{display:flex;gap:10px;position:absolute;left:12px;bottom:12px}
+.hero-thumb{width:90px;height:56px;border-radius:8px;overflow:hidden;box-shadow:0 8px 20px rgba(2,6,23,0.25)}
+.hero-thumb img{width:100%;height:100%;object-fit:cover}
 
-nav a:hover{
-    color:var(--primary);
-}
+/* Section titles */
+.section-title{margin-bottom:22px}
+.section-title h2{font-size:1.6rem;color:var(--dark);}
+.section-title p{color:var(--muted);margin-top:6px}
 
-.btn{
-    display:inline-block;
-    background:var(--primary);
-    color:#fff;
-    padding:12px 22px;
-    border-radius:8px;
-}
+/* Grid & Cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 8px 30px rgba(2,6,23,0.06);}
+.card h3{color:var(--dark);margin-bottom:8px}
 
-section{
-    padding:60px 0;
-}
+/* Two-column layout for content pages */
+.content-columns{display:grid;grid-template-columns:1fr 420px;gap:30px;align-items:start}
+.content-columns .left p{color:var(--muted);line-height:1.6}
 
-.hero{
-    height:85vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    color:#fff;
-    background:linear-gradient(rgba(0,0,0,0.6),rgba(37,99,235,0.7)),
-    url("https://images.unsplash.com/photo-1504307651254-35680f356dfd") center/cover;
-}
+/* Right panel (services / why choose us) */
+.panel{background:linear-gradient(180deg,#071028 0%, #07152a 100%);color:#fff;padding:22px;border-radius:12px}
+.panel h3{color:var(--primary);margin-bottom:12px}
+.panel ul{list-style:none;padding-left:0}
+.panel li{display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.04)}
+.panel li:last-child{border-bottom:0}
+.panel .icon{width:40px;height:40px;border-radius:8px;background:rgba(255,255,255,0.04);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--primary)}
 
-.hero h1{
-    font-size:48px;
-}
+/* Clients list / logos */
+.clients-logos{display:flex;flex-wrap:wrap;gap:16px;align-items:center}
+.clients-logos img{max-height:40px;filter:grayscale(0.03);opacity:0.95}
 
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-}
+/* Footer */
+footer{background:var(--dark);color:#fff;padding:26px 0;text-align:center}
 
-.card{
-    background:#fff;
-    padding:20px;
-    border-radius:12px;
-    box-shadow:0 5px 20px rgba(0,0,0,0.08);
-}
+/* Utilities */
+.kv{display:flex;gap:12px;align-items:center}
+.kv .num{background:var(--primary);color:#fff;padding:8px 12px;border-radius:8px;font-weight:800}
 
-footer{
-    background:var(--dark);
-    color:#fff;
-    text-align:center;
-    padding:20px;
+/* Responsive */
+@media(max-width:1024px){
+    .hero-inner{grid-template-columns:1fr 380px}
+    .content-columns{grid-template-columns:1fr 1fr}
 }
 
 @media(max-width:768px){
-    nav ul{
-        flex-direction:column;
-        display:none;
-    }
+    nav ul{display:none;flex-direction:column;background:#fff;position:fixed;top:65px;left:0;right:0;padding:22px;box-shadow:0 20px 40px rgba(2,6,23,0.12)}
+    nav ul.active{display:flex}
+    .menu-btn{display:block}
+
+    .hero{padding:36px 0;min-height:60vh}
+    .hero-inner{grid-template-columns:1fr;}
+    .hero-media{order:-1;margin-bottom:18px}
+    .hero h1{font-size:1.9rem}
+    .content-columns{grid-template-columns:1fr}
 }
+
+/* Small tweaks for brochure-like visuals */
+.panel .title-row{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+.badge{display:inline-block;background:linear-gradient(90deg,var(--primary),var(--primary-600));color:#fff;padding:8px 12px;border-radius:8px;font-weight:700}
+
+/* Make images inside content responsive */
+img{max-width:100%;height:auto;display:block}
