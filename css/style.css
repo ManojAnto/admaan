@@ -113,3 +113,43 @@ footer{background:var(--dark);color:#fff;padding:26px 0;text-align:center}
 
 /* Make images inside content responsive */
 img{max-width:100%;height:auto;display:block}
+
+/* Logo */
+.logo-link{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    text-decoration:none;
+    color:#222;
+    font-weight:700;
+    font-size:1.4rem;
+}
+
+.logo-img{
+    width:60px;
+    height:auto;
+    display:block;
+}
+
+/* Tablet */
+@media (max-width:768px){
+    .logo-img{
+        width:48px;
+    }
+
+    .logo-link{
+        font-size:1.1rem;
+        gap:8px;
+    }
+}
+
+/* Mobile */
+@media (max-width:480px){
+    .logo-img{
+        width:40px;
+    }
+
+    .logo-link{
+        font-size:1rem;
+    }
+}
