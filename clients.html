@@ -1,3 +1,70 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Clients</title><style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}body{color:#333}.container{width:90%;max-width:1200px;margin:auto}header,footer{background:#0d47a1;color:#fff}header{position:sticky;top:0}.navbar{display:flex;justify-content:space-between;align-items:center;padding:15px 0}.logo-link{display:flex;align-items:center;color:#fff;text-decoration:none;font-weight:bold}.logo-img{width:55px;height:55px;border-radius:50%;margin-right:10px}nav ul{display:flex;gap:20px;list-style:none}nav a{color:#fff;text-decoration:none}.hero{background:linear-gradient(to right,#0d47a1,#1976d2);color:#fff;padding:70px 0;text-align:center}.btn{display:inline-block;background:#ff9800;color:#fff;padding:12px 24px;border-radius:30px;text-decoration:none;margin-top:20px}section{padding:60px 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}.card,.logo-box{box-shadow:0 5px 15px rgba(0,0,0,.1);padding:20px;border-radius:8px}.logos{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:16px}.logo-box img{height:60px;max-width:100%;object-fit:contain}footer{text-align:center;padding:20px}
-</style></head><body><header><div class="container navbar"><a class="logo-link" href="index.html"><img src="images/admaanlogo.jpg" class="logo-img">ADMAAN DESIGNS</a><nav><ul><li><a href="index.html">Home</a></li><li><a href="clients.html">Clients</a></li><li><a href="contact.html">Contact</a></li></ul></nav></div></header><section class="hero"><div class="container"><h1>Our Trusted Clients</h1><p>Building lasting partnerships.</p><a class="btn" href="contact.html">Contact Us</a></div></section><section><div class="container"><div class="grid"><div class="card"><h2>Why Choose Us</h2><ul><li>10+ Years Experience</li><li>Quality Materials</li><li>On-Time Delivery</li></ul></div><div class="card"><h2>Clients</h2><ul><li>CavinKare Pvt Ltd</li><li>Thirumala Milk Products Pvt Ltd</li><li>Ryans Infra</li><li>Ryans Farm</li><li>SRK Infra Developers</li><li>Aniruth Groups</li><li>Modern Group</li><li>Arcicon</li><li>VGN</li><li>Santhosh Builders</li><li>Ravin Interiors</li><li>Ravindar Designs</li><li>AVS Livescape</li><li>SSD Oil Mills</li><li>Carot Labs</li></ul></div></div><h2 style='margin:40px 0 20px;color:#0d47a1'>Client Logos</h2><div class='logos'><div class='logo-box'><img src='logos/cavinkare.svg'><div>CavinKare</div></div><div class='logo-box'><img src='logos/thirumala.svg'><div>Thirumala</div></div><div class='logo-box'><img src='logos/ryans.svg'><div>Ryans</div></div><div class='logo-box'><img src='logos/ryansfarm.svg'><div>Ryans Farm</div></div><div class='logo-box'><img src='logos/srk.svg'><div>SRK</div></div><div class='logo-box'><img src='logos/aniruth.svg'><div>Aniruth</div></div><div class='logo-box'><img src='logos/modern.svg'><div>Modern</div></div><div class='logo-box'><img src='logos/arcicon.svg'><div>Arcicon</div></div><div class='logo-box'><img src='logos/vgn.svg'><div>VGN</div></div><div class='logo-box'><img src='logos/santhosh.svg'><div>Santhosh</div></div><div class='logo-box'><img src='logos/ravin.svg'><div>Ravin</div></div><div class='logo-box'><img src='logos/ravindar.svg'><div>Ravindar</div></div><div class='logo-box'><img src='logos/avs.svg'><div>AVS</div></div><div class='logo-box'><img src='logos/ssd.svg'><div>SSD</div></div><div class='logo-box'><img src='logos/carot.svg'><div>Carot</div></div></div></div></section><footer>© 2026 ADMAAN DESIGNS</footer></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>ADMAAN DESIGNS | Clients</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{color:#333}
+.container{width:90%;max-width:1200px;margin:auto}
+header{background:#0d47a1;color:#fff;position:sticky;top:0;z-index:100}
+.navbar{display:flex;justify-content:space-between;align-items:center;padding:15px 0}
+.logo-link{display:flex;align-items:center;color:#fff;text-decoration:none;font-weight:bold;font-size:22px}
+.logo-img{width:55px;height:55px;border-radius:50%;margin-right:10px}
+.menu-toggle{display:none;font-size:28px;cursor:pointer}
+nav ul{display:flex;list-style:none;gap:25px}
+nav a{color:#fff;text-decoration:none;font-weight:bold}
+.hero{background:linear-gradient(to right,#0d47a1,#1976d2);color:#fff;padding:80px 0}
+.hero-inner{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between}
+.hero-text,.hero-media{flex:1;min-width:280px}
+.hero-media{text-align:center;margin-top:10px}
+.hero-media img{max-width:100%;width:450px}
+.btn{display:inline-block;background:#ff9800;color:#fff;padding:14px 30px;border-radius:30px;text-decoration:none;margin-top:20px}
+section{padding:60px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{padding:25px;box-shadow:0 5px 15px rgba(0,0,0,.1);border-radius:10px;transition:.3s}
+.card:hover{transform:translateY(-8px)}
+.clients{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:30px}
+.client{padding:18px;border:1px solid #ddd;border-radius:8px;text-align:center}
+footer{background:#0d47a1;color:#fff;text-align:center;padding:20px}
+@media(max-width:768px){
+.navbar{flex-direction:column;align-items:stretch}
+.topbar{display:flex;justify-content:space-between;align-items:center}
+.menu-toggle{display:block}
+nav{display:none;width:100%}
+nav.active{display:block}
+nav ul{flex-direction:column;gap:0}
+nav a{display:block;padding:14px;text-align:center;border-top:1px solid rgba(255,255,255,.15)}
+.hero-inner{flex-direction:column;text-align:center}
+}
+</style>
+</head>
+<body>
+<header><div class="container navbar">
+<div class="topbar">
+<a class="logo-link" href="index.html"><img src="images/admaanlogo.jpg" class="logo-img"><span>ADMAAN DESIGNS</span></a>
+<div class="menu-toggle" onclick="document.getElementById('nav').classList.toggle('active')">&#9776;</div>
+</div>
+<nav id="nav"><ul>
+<li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="projects.html">Projects</a></li><li><a href="clients.html">Clients</a></li><li><a href="contact.html">Contact</a></li>
+</ul></nav></div></header>
+
+<section class="hero"><div class="container hero-inner">
+<div class="hero-text">
+<h1>Our Trusted Clients</h1>
+<p>We are proud to deliver quality construction solutions for leading residential, commercial and industrial organizations.</p>
+<a class="btn" href="contact.html">Become Our Client</a>
+</div>
+<div class="hero-media"><img src="images/IMG-20260320-WA0000.jpg" alt="Clients"></div>
+</div></section>
+
+<section><div class="container">
+<div class="grid">
+<div class="card"><h3>15+ Trusted Organizations</h3><p>Long-term partnerships built on quality and trust.</p></div>
+<div class="card"><h3>50+ Design Projects</h3><p>Successfully completed design projects.</p></div>
+<div class="card"><h3>30+ Construction Projects</h3><p>Industrial, commercial and residential works.</p></div>
+</div>
+
+<div class="clients">
+<div class="client"><strong>CavinKare Pvt Ltd</strong><br><img src="logos/cavinkare.svg" style="max-width:120px;margin-top:10px" onerror="this.style.display='none'"></div><div class="client"><strong>Thirumala Milk Products Pvt Ltd</strong><br><img src="logos/thirumala.svg" style="max-width:120px;margin-top:10px" onerror="this.style.display='none'"></div><div class="client"><strong>Ryans Infra</strong><br><img src="logos/ryans.svg" style="max-width:120px;margin-top:10px" onerror="this.style.display='none'"></div><div class="client"><strong>Ryans Farm</strong><br><img src="logos/ryans.svg" style="max-width:120px;margin-top:10px" onerror="this.style.display='none'"></div><div class="client"><strong>SRK Infra Developers</strong><br><img src="logos/srk.svg" style="max-width:120px;margin-top:10px" onerror="this.style.display='none'"></div><div class="client"><strong>Aniruth Groups</strong><br><img src="logos/aniruth.svg" style="max-width:120px;margin-top:10px" onerror="this.style.display='none'"></div><div class="client"><strong>Modern Group</strong><br><img src="logos/modern.svg" style="max-width:120px;margin-top:10px" onerror="this.style.display='none'"></div><div class="client"><strong>Arcicon</strong><br><img src="logos/arcicon.svg" style="max-width:120px;margin-top:10px" onerror="this.style.display='none'"></div><div class="client"><strong>VGN</strong><br><img src="logos/vgn.svg" style="max-width:120px;margin-top:10px" onerror="this.style.display='none'"></div><div class="client"><strong>Santhosh Builders</strong><br><img src="logos/santhosh.svg" style="max-width:120px;margin-top:10px" onerror="this.style.display='none'"></div><div class="client"><strong>Ravin Interiors</strong><br><img src="logos/ravin.svg" style="max-width:120px;margin-top:10px" onerror="this.style.display='none'"></div><div class="client"><strong>Ravindar Designs</strong><br><img src="logos/ravindar.svg" style="max-width:120px;margin-top:10px" onerror="this.style.display='none'"></div><div class="client"><strong>AVS Livescape</strong><br><img src="logos/avs.svg" style="max-width:120px;margin-top:10px" onerror="this.style.display='none'"></div><div class="client"><strong>SSD Oil Mills</strong><br><img src="logos/ssd.svg" style="max-width:120px;margin-top:10px" onerror="this.style.display='none'"></div><div class="client"><strong>Carot Labs</strong><br><img src="logos/carot.svg" style="max-width:120px;margin-top:10px" onerror="this.style.display='none'"></div></div></div></section><footer>© 2026 ADMAAN DESIGNS | We Shape Your Stature</footer></body></html>
