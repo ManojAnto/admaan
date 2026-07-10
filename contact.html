@@ -1,25 +1,61 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Contact - ADMAAN DESIGNS</title>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ADMAAN DESIGNS | Contact</title>
+<link rel="stylesheet" href="css/style.css">
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}body{color:#333;background:#fff}.container{width:90%;max-width:1200px;margin:auto}
-header{background:#0d47a1;color:#fff;position:sticky;top:0}.navbar{display:flex;justify-content:space-between;align-items:center;padding:15px 0}.logo{font-size:24px;font-weight:bold}.menu-btn{display:none;font-size:28px;cursor:pointer}nav ul{display:flex;list-style:none;gap:22px}nav a{color:#fff;text-decoration:none}
-.hero{background:linear-gradient(to right,#0d47a1,#1976d2);color:#fff;padding:50px 0;text-align:center}
-section{padding:60px 0}.section-title{text-align:center;margin-bottom:35px}.content-columns{display:grid;grid-template-columns:2fr 1fr;gap:30px}
-.left,.panel{padding:25px;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1)}.panel{background:#0d47a1;color:#fff}
-input,textarea{width:100%;padding:12px;margin:8px 0;border:1px solid #ddd;border-radius:8px}button{background:#0d47a1;color:#fff;border:none;padding:12px 24px;border-radius:25px}
-.clients-logos{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.clients-logos img{width:100%;background:#fff;padding:6px;border-radius:6px}
-footer{background:#0d47a1;color:#fff;text-align:center;padding:20px}
-@media(max-width:768px){.navbar{flex-direction:column}.menu-btn{display:block}.content-columns{grid-template-columns:1fr}nav ul{flex-wrap:wrap;justify-content:center}}
-</style></head><body>
-<header><div class="container navbar"><div class="logo">ADMAAN DESIGNS</div><div class="menu-btn">☰</div><nav><ul>
-<li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="projects.html">Projects</a></li><li><a href="clients.html">Clients</a></li><li><a href="contact.html">Contact</a></li>
-</ul></nav></div></header>
-<div class="hero"><div class="container"><h1>Contact Us</h1><p>Get in touch for project inquiries, quotes or partnerships.</p></div></div>
-<section><div class="container"><div class="content-columns">
-<div class="left"><h2>Contact Details</h2><p><b>Address:</b> No.13/A, Kalyan Nagar 1st Street, West Tambaram - 600045</p><p><b>Branch:</b> No.5/9, Thandu Mariyamman Koil St, Maduranthakam - 603306</p><p><b>Phone:</b> 7200113319 / 7010765750</p><p><b>Email:</b> admaandesigns@gmail.com</p><h3 style="margin-top:20px">Quick Inquiry</h3><form><input placeholder="Your Name"><input type="email" placeholder="Email Address"><textarea placeholder="Tell us about your project"></textarea><button>Send Inquiry</button></form></div>
-<div class="panel"><h2>Company Information</h2><table><tr><td>Established</td><td>2016</td></tr><tr><td>Experience</td><td>10+ Years</td></tr><tr><td>Business</td><td>Industrial & Commercial Civil Contractor</td></tr><tr><td>Locations</td><td>Chennai & Tindivanam</td></tr><tr><td>Team</td><td>15+ Technical Staff</td></tr><tr><td>Design Projects</td><td>50+</td></tr><tr><td>Construction</td><td>30+</td></tr></table>
-<h3 style="margin-top:20px">Our Clients</h3><div class="clients-logos">
-<img src="logos/cavinkare.svg"><img src="logos/thirumala.svg"><img src="logos/ryans.svg"><img src="logos/vgn.svg"><img src="logos/srk.svg"><img src="logos/aniruth.svg"><img src="logos/modern.svg"><img src="logos/arcicon.svg">
-</div></div>
-</div></div></section><footer>© 2026 ADMAAN DESIGNS</footer></body></html>
+/* Use the same CSS from your index.html */
+</style>
+</head>
+<body>
+<header>
+<div class="container navbar">
+<a href="index.html" class="logo-link"><img src="images/admaanlogo.jpg" class="logo-img"><span>ADMAAN DESIGNS</span></a>
+<nav><ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="clients.html">Clients</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul></nav>
+</div>
+</header>
+
+<section class="hero">
+<div class="container hero-inner">
+<div class="hero-text">
+<h1>Contact ADMAAN DESIGNS</h1>
+<p>Get in touch for construction, architectural design, renovation, and turnkey project enquiries.</p>
+<a href="tel:+917200113319" class="btn">Call Now</a>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<div class="section-title"><h2>Contact Us</h2><p>We're here to help with your next project.</p></div>
+<div class="grid">
+<div class="card">
+<h3>Office Address</h3>
+<p>No.13/A, Kalyan Nagar 1st Street,<br>West Tambaram - 600045</p>
+<p><strong>Branch:</strong><br>No.5/9, Thandu Mariyamman Koil St,<br>Maduranthakam - 603306</p>
+<h3>Phone</h3><p>720 011 3319 / 70107 65750</p>
+<h3>Email</h3><p>admaandesigns@gmail.com</p>
+</div>
+<div class="card">
+<h3>Quick Inquiry</h3>
+<form>
+<input style="width:100%;padding:12px;margin:8px 0" placeholder="Name">
+<input style="width:100%;padding:12px;margin:8px 0" placeholder="Email">
+<textarea style="width:100%;padding:12px;height:120px;margin:8px 0" placeholder="Project details"></textarea>
+<button class="btn" type="submit">Send Inquiry</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+
+<footer>© 2026 ADMAAN DESIGNS | Building Dreams Into Reality</footer>
+</body></html>
