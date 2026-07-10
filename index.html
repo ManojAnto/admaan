@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ADMAAN DESIGNS | Home Construction</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#ffffff;
+    color:#333;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* Header */
+
+header{
+    background:#0d47a1;
+    color:#fff;
+    padding:15px 0;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo-link{
+    display:flex;
+    align-items:center;
+    text-decoration:none;
+    color:#fff;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.logo-img{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    margin-right:10px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#90caf9;
+}
+
+/* Hero */
+
+.hero{
+    background:linear-gradient(to right,#0d47a1,#1976d2);
+    color:#fff;
+    padding:80px 0;
+}
+
+.hero-inner{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.hero-text{
+    flex:1;
+    min-width:300px;
+}
+
+.hero-text h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    background:#fff;
+    color:#0d47a1;
+    padding:14px 30px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#e3f2fd;
+}
+
+.hero-media{
+    flex:1;
+    text-align:center;
+    min-width:300px;
+}
+
+.hero-media img{
+    width:100%;
+    max-width:500px;
+}
+
+/* Sections */
+
+section{
+    padding:70px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.section-title h2{
+    color:#0d47a1;
+    font-size:36px;
+}
+
+.section-title p{
+    margin-top:10px;
+    color:#666;
+}
+
+/* Cards */
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#fff;
+    border-radius:10px;
+    padding:25px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#1565c0;
+    margin-bottom:15px;
+}
+
+/* About */
+
+.about{
+    display:flex;
+    gap:40px;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.about img{
+    width:100%;
+    max-width:500px;
+    border-radius:10px;
+}
+
+.about-text{
+    flex:1;
+}
+
+/* Footer */
+
+footer{
+    background:#0d47a1;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-top:15px;
+}
+
+.hero-text h1{
+    font-size:34px;
+}
+
+.hero-inner{
+    text-align:center;
+}
+
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<div class="container navbar">
+
+<a href="index.html" class="logo-link">
+<img src="images/admaanlogo.jpg" class="logo-img" alt="Logo">
+<span>ADMAAN DESIGNS</span>
+</a>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="clients.html">Clients</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+</div>
+</header>
+
+<!-- Hero -->
+
+<section class="hero">
+
+<div class="container hero-inner">
+
+<div class="hero-text">
+
+<h1>Building Your Dream Home with Quality & Trust</h1>
+
+<p>
+ADMAAN DESIGNS specializes in modern home construction,
+renovation, architectural planning, and turnkey residential projects.
+From concept to completion, we create homes built to last.
+</p>
+
+<a href="contact.html" class="btn">Get Free Quote</a>
+
+</div>
+
+<div class="hero-media">
+
+<img src="images/hero-large.svg" alt="Home Construction">
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Highlights -->
+
+<section>
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Why Choose Us?</h2>
+
+<p>Professional construction services with quality workmanship.</p>
+
+</div>
+
+<div class="grid">
+
+<div class="card">
+<h3>10+ Years Experience</h3>
+<p>Experienced professionals delivering reliable residential construction services.</p>
+</div>
+
+<div class="card">
+<h3>100+ Happy Families</h3>
+<p>Successfully completed homes with customer satisfaction as our priority.</p>
+</div>
+
+<div class="card">
+<h3>Quality Materials</h3>
+<p>We use premium-grade construction materials for lasting strength and durability.</p>
+</div>
+
+<div class="card">
+<h3>On-Time Delivery</h3>
+<p>Efficient planning and execution ensure projects are completed on schedule.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- About -->
+
+<section style="background:#f5f9ff;">
+
+<div class="container about">
+
+<img src="images/thumb1.svg" alt="Construction">
+
+<div class="about-text">
+
+<h2 style="color:#0d47a1;margin-bottom:20px;">
+Your Trusted Home Construction Partner
+</h2>
+
+<p style="line-height:1.8;">
+At ADMAAN DESIGNS, we believe every home should reflect the
+dreams and lifestyle of its owners. Our team provides complete
+construction solutions including architectural planning,
+structural design, interior finishing, and project management.
+We focus on quality, transparency, and customer satisfaction
+at every stage of construction.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Services -->
+
+<section>
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Our Services</h2>
+
+</div>
+
+<div class="grid">
+
+<div class="card">
+<h3>🏠 House Construction</h3>
+<p>Complete residential building solutions.</p>
+</div>
+
+<div class="card">
+<h3>📐 Architectural Design</h3>
+<p>Modern and functional home planning.</p>
+</div>
+
+<div class="card">
+<h3>🎨 Interior Design</h3>
+<p>Elegant interiors tailored to your style.</p>
+</div>
+
+<div class="card">
+<h3>🔨 Renovation</h3>
+<p>Upgrade and remodel existing homes.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Projects -->
+
+<section style="background:#f5f9ff;">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Recent Projects</h2>
+
+<p>Some of our completed residential works.</p>
+
+</div>
+
+<div class="grid">
+
+<div class="card">Luxury Villa Construction</div>
+
+<div class="card">Modern Duplex House</div>
+
+<div class="card">Independent Family Home</div>
+
+<div class="card">Home Renovation & Interior Design</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 ADMAAN DESIGNS | Building Dreams Into Reality
+
+</footer>
+
+</body>
+</html>
