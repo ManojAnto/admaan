@@ -295,6 +295,7 @@ font-size:30px;
 
 }
 </style>
+<link rel="stylesheet" href="css/slider.css">
 
 </head>
 
@@ -455,6 +456,26 @@ communities and clients.
 © 2026 ADMAAN DESIGNS | We Shape Your Stature
 
 </footer>
+<script>
 
+const slides=document.querySelectorAll(".slide");
+
+let current=0;
+
+setInterval(()=>{
+
+slides[current].classList.remove("active");
+
+current++;
+
+if(current>=slides.length){
+current=0;
+}
+
+slides[current].classList.add("active");
+
+},3000);
+
+</script>
 </body>
 </html>
