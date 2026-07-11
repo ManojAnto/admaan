@@ -1,48 +1,404 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Services - ADMAAN DESIGNS</title>
-<link rel="stylesheet" href="css/style.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ADMAAN DESIGNS | Services</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f7fb;
+color:#333;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+/* HEADER */
+header{
+background:#0d47a1;
+color:#fff;
+position:sticky;
+top:0;
+z-index:100;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 0;
+}
+
+.logo-link{
+display:flex;
+align-items:center;
+text-decoration:none;
+color:#fff;
+font-size:22px;
+font-weight:bold;
+}
+
+.logo-img{
+width:55px;
+height:55px;
+border-radius:50%;
+margin-right:10px;
+}
+
+.menu-toggle{
+display:none;
+font-size:28px;
+cursor:pointer;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav a{
+color:#fff;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* HERO */
+
+.hero{
+background:linear-gradient(rgba(13,71,161,.85),rgba(25,118,210,.85)),
+url("images/service-bg.jpg") center/cover;
+padding:80px 0;
+color:#fff;
+text-align:center;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:18px;
+max-width:800px;
+margin:auto;
+line-height:1.8;
+}
+
+/* SERVICES */
+
+.services{
+padding:70px 0;
+}
+
+.services h2{
+text-align:center;
+font-size:38px;
+color:#0d47a1;
+margin-bottom:10px;
+}
+
+.services p{
+text-align:center;
+margin-bottom:40px;
+color:#555;
+}
+
+.service-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.service-card{
+background:#fff;
+border-radius:12px;
+padding:25px;
+box-shadow:0 5px 18px rgba(0,0,0,.08);
+transition:.3s;
+border-top:5px solid #0d47a1;
+}
+
+.service-card:hover{
+transform:translateY(-8px);
+}
+
+.service-card h3{
+color:#0d47a1;
+margin-bottom:12px;
+font-size:20px;
+}
+
+.service-card p{
+text-align:left;
+line-height:1.7;
+margin:0;
+}
+
+/* CTA */
+
+.cta{
+background:#0d47a1;
+color:#fff;
+padding:60px 20px;
+text-align:center;
+}
+
+.cta h2{
+font-size:34px;
+margin-bottom:15px;
+}
+
+.cta a{
+display:inline-block;
+margin-top:20px;
+background:#ff9800;
+padding:14px 35px;
+color:#fff;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+}
+
+/* FOOTER */
+
+footer{
+background:#0d47a1;
+color:#fff;
+text-align:center;
+padding:20px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.navbar{
+flex-direction:column;
+align-items:stretch;
+}
+
+.topbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.menu-toggle{
+display:block;
+}
+
+nav{
+display:none;
+width:100%;
+}
+
+nav.active{
+display:block;
+}
+
+nav ul{
+flex-direction:column;
+gap:0;
+}
+
+nav a{
+display:block;
+padding:14px;
+text-align:center;
+border-top:1px solid rgba(255,255,255,.15);
+}
+
+.hero h1{
+font-size:34px;
+}
+
+}
+</style>
+
 </head>
 <body>
 
 <header>
-  <div class="container navbar">
-    <div class="logo">ADMAAN DESIGNS</div>
-    <div class="menu-btn" id="menuBtn" aria-label="Open menu" role="button">☰</div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="clients.html">Clients</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
+
+<div class="container navbar">
+
+<div class="topbar">
+
+<a class="logo-link" href="index.html">
+<img src="images/admaanlogo.jpg" class="logo-img">
+<span>ADMAAN DESIGNS</span>
+</a>
+
+<div class="menu-toggle"
+onclick="document.getElementById('nav').classList.toggle('active')">
+&#9776;
+</div>
+
+</div>
+
+<nav id="nav">
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="services.html">Services</a></li>
+
+<li><a href="projects.html">Projects</a></li>
+
+<li><a href="clients.html">Clients</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</div>
+
 </header>
 
-<section>
-  <div class="container">
-    <div class="section-title"><h2>Our Services</h2></div>
+<section class="hero">
 
-    <div class="grid">
-      <div class="card">Feasibility &amp; Planning</div>
-      <div class="card">Architectural &amp; Structural Consulting</div>
-      <div class="card">Industrial Painting &amp; Coating</div>
-      <div class="card">Industrial Structural &amp; MEP Works</div>
-      <div class="card">Industrial Truss &amp; Fabrication</div>
-      <div class="card">Interior Designing</div>
-      <div class="card">Industrial Flooring</div>
-      <div class="card">BIM &amp; 3D Modeling</div>
-    </div>
-  </div>
+<div class="container">
+
+<h1>Our Services</h1>
+
+<p>
+
+We provide complete engineering, industrial and construction
+solutions with quality, innovation and timely execution.
+
+</p>
+
+</div>
+
 </section>
 
-<footer>© 2026 ADMAAN DESIGNS</footer>
+<section class="services">
 
-<script src="js/main.js"></script>
+<div class="container">
+
+<h2>What We Offer</h2>
+
+<p>Professional Civil, Industrial & MEP Construction Services</p>
+
+<div class="service-grid">
+
+<div class="service-card">
+<h3>📋 Feasibility & Planning</h3>
+<p>Complete project feasibility studies, planning and execution strategy.</p>
+</div>
+
+<div class="service-card">
+<h3>🏗 Architectural & Structural Consulting</h3>
+<p>Professional architectural planning and structural engineering consultancy.</p>
+</div>
+
+<div class="service-card">
+<h3>🎨 Industrial Painting & Special Coating</h3>
+<p>Protective coatings, industrial painting and corrosion resistant finishes.</p>
+</div>
+
+<div class="service-card">
+<h3>🏭 Industrial Structural & MEP Construction</h3>
+<p>Complete industrial construction including Mechanical, Electrical and Plumbing.</p>
+</div>
+
+<div class="service-card">
+<h3>🔩 Industrial Truss & Fabrication</h3>
+<p>Heavy steel fabrication and industrial truss installation.</p>
+</div>
+
+<div class="service-card">
+<h3>🏠 Interior Designing Works</h3>
+<p>Modern interior design and execution for residential and commercial projects.</p>
+</div>
+
+<div class="service-card">
+<h3>📦 Industrial Procurement</h3>
+<p>Reliable procurement and supply of construction materials.</p>
+</div>
+
+<div class="service-card">
+<h3>🏢 Industrial Renovation</h3>
+<p>Renovation and modernization of industrial facilities.</p>
+</div>
+
+<div class="service-card">
+<h3>🧹 Industrial Cleaning Services</h3>
+<p>Professional industrial cleaning and maintenance solutions.</p>
+</div>
+
+<div class="service-card">
+<h3>🧱 Industrial Flooring</h3>
+<p>High-strength industrial flooring for factories and warehouses.</p>
+</div>
+
+<div class="service-card">
+<h3>🛣 Road Works, Paver & RCC Flooring</h3>
+<p>Road construction, paving blocks and RCC flooring works.</p>
+</div>
+
+<div class="service-card">
+<h3>🧪 Chemical & Acid Resistant Flooring</h3>
+<p>Durable chemical-resistant flooring for industrial environments.</p>
+</div>
+
+<div class="service-card">
+<h3>👷 Civil Work Manpower Supply</h3>
+<p>Experienced engineers, supervisors and skilled manpower supply.</p>
+</div>
+
+<div class="service-card">
+<h3>🖥 3D Model & Simulations</h3>
+<p>Detailed 3D visualization and project simulation before execution.</p>
+</div>
+
+<div class="service-card">
+<h3>📐 BIM Services</h3>
+<p>Building Information Modelling for efficient project planning and coordination.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="cta">
+
+<div class="container">
+
+<h2>Let's Build Your Next Project</h2>
+
+<p>Contact ADMAAN DESIGNS for professional construction and industrial solutions.</p>
+
+<a href="contact.html">Contact Us</a>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 ADMAAN DESIGNS | We Shape Your Stature
+
+</footer>
+
 </body>
 </html>
