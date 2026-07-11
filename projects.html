@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ADMAAN DESIGNS | Projects</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    color:#333;
+    background:#f5f7fb;
+    line-height:1.6;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* Header */
+
+header{
+    background:#0d47a1;
+    color:#fff;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 0;
+}
+
+.logo-link{
+    display:flex;
+    align-items:center;
+    text-decoration:none;
+    color:#fff;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.logo-img{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    margin-right:10px;
+}
+
+.menu-toggle{
+    display:none;
+    font-size:28px;
+    cursor:pointer;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ffeb3b;
+}
+
+/* Hero */
+
+.hero{
+    background:linear-gradient(135deg,#0d47a1,#1976d2);
+    color:#fff;
+    padding:80px 0;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+/* Section */
+
+section{
+    padding:60px 0;
+}
+
+.projects-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+
+/* Project Cards */
+
+.card{
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.35s;
+    border-left:6px solid #0d47a1;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 35px rgba(0,0,0,.18);
+}
+
+.card-header{
+    background:#0d47a1;
+    color:#fff;
+    padding:18px;
+    display:flex;
+    align-items:center;
+}
+
+.number{
+    width:45px;
+    height:45px;
+    background:#fff;
+    color:#0d47a1;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:20px;
+    font-weight:bold;
+    margin-right:15px;
+}
+
+.card-header h2{
+    font-size:22px;
+}
+
+.card-body{
+    padding:20px;
+}
+
+.card-body p{
+    margin-bottom:10px;
+    font-size:15px;
+}
+
+.client{
+    color:#0d47a1;
+    font-weight:bold;
+}
+
+footer{
+    background:#0d47a1;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.navbar{
+    flex-direction:column;
+    align-items:stretch;
+}
+
+.topbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.menu-toggle{
+    display:block;
+}
+
+nav{
+    display:none;
+    width:100%;
+}
+
+nav.active{
+    display:block;
+}
+
+nav ul{
+    flex-direction:column;
+    gap:0;
+}
+
+nav a{
+    display:block;
+    text-align:center;
+    padding:14px;
+    border-top:1px solid rgba(255,255,255,.15);
+}
+
+.hero h1{
+    font-size:34px;
+}
+
+}
+</style>
+</head>
+<body>
+  <header>
+    <div class="container navbar">
+
+        <div class="topbar">
+            <a class="logo-link" href="index.html">
+                <img src="images/admaanlogo.jpg" class="logo-img">
+                <span>ADMAAN DESIGNS</span>
+            </a>
+
+            <div class="menu-toggle"
+                 onclick="document.getElementById('nav').classList.toggle('active')">
+                &#9776;
+            </div>
+        </div>
+
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="clients.html">Clients</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <h1>Our Projects</h1>
+        <p>Delivering Excellence in Industrial, Commercial & Residential Construction</p>
+    </div>
+</section>
+
+<section>
+
+<div class="container">
+
+<div class="projects-grid">
+
+<!-- Project 1 -->
+
+<div class="card">
+
+<div class="card-header">
+<div class="number">1</div>
+<h2>Architecture Design</h2>
+</div>
+
+<div class="card-body">
+<p>🏛️ Complete Architectural Planning for Residential, Commercial and Industrial Buildings.</p>
+
+<p>📐 2D Floor Plans & Structural Layouts</p>
+
+<p>🏡 Modern 3D Elevation Designs</p>
+
+<p class="client">Design Services by ADMAAN DESIGNS</p>
+
+</div>
+
+</div>
+
+<!-- Project 2 -->
+
+<div class="card">
+
+<div class="card-header">
+<div class="number">2</div>
+<h2>Industrial Truss & Fabrication</h2>
+</div>
+
+<div class="card-body">
+
+<p>🏗️ Heavy Steel Truss Fabrication and Installation.</p>
+
+<p>Industrial roofing and structural fabrication works completed with high-quality standards.</p>
+
+<p class="client">
+Client : Thirumala Milk Products Pvt. Ltd., Melmaruvathur
+</p>
+
+</div>
+
+</div>
+
+<!-- Project 3 -->
+
+<div class="card">
+
+<div class="card-header">
+<div class="number">3</div>
+<h2>Industrial & Factory Boundary Walls</h2>
+</div>
+
+<div class="card-body">
+
+<p>🧱 Construction of Strong Industrial Compound & Boundary Walls.</p>
+
+<p>Executed with durable materials ensuring safety and long-term performance.</p>
+
+<p class="client">
+Client : Thirumala Milk Products Pvt. Ltd.
+</p>
+
+</div>
+
+</div>
+
+<!-- Project 4 -->
+
+<div class="card">
+
+<div class="card-header">
+<div class="number">4</div>
+<h2>Dairy Plant Flooring</h2>
+</div>
+
+<div class="card-body">
+
+<p>🏭 Industrial Grade Flooring for Dairy Processing Units.</p>
+
+<p>Designed for hygiene, durability and heavy machinery operations.</p>
+
+<p class="client">
+Client : Cavinkare Pvt. Ltd., Kanchipuram
+</p>
+
+</div>
+
+</div>
+
+<!-- Project 5 -->
+
+<div class="card">
+
+<div class="card-header">
+<div class="number">5</div>
+<h2>Office Building Construction</h2>
+</div>
+
+<div class="card-body">
+
+<p>🏢 Complete Office Building Construction.</p>
+
+<p>From foundation to finishing with quality workmanship and timely delivery.</p>
+
+<p class="client">
+Client : Ryans Infra, Mannivakkam
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+  <footer>
+    <div class="container">
+        <p>&copy; 2026 ADMAAN DESIGNS | We Shape Your Stature</p>
+    </div>
+</footer>
+
+<script>
+// Mobile Menu Toggle
+const menuToggle = document.querySelector(".menu-toggle");
+const nav = document.getElementById("nav");
+
+menuToggle.addEventListener("click", function () {
+    nav.classList.toggle("active");
+});
+</script>
+
+</body>
+</html>
