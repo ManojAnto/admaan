@@ -42,12 +42,31 @@ padding:15px 0;
 }
 
 .logo-link{
-display:flex;
-align-items:center;
-color:#fff;
-text-decoration:none;
-font-weight:bold;
-font-size:22px;
+    display:flex;
+    align-items:center;
+    color:#fff;
+    text-decoration:none;
+}
+
+.logo-text{
+    display:flex;
+    flex-direction:column;
+    line-height:1.2;
+}
+
+.logo-title{
+    font-size:22px;
+    font-weight:bold;
+    letter-spacing:.5px;
+}
+
+.logo-tagline{
+    font-size:12px;
+    color:#ffe082;
+    font-weight:500;
+    font-family:"Noto Serif Tamil","Latha","Vijaya",serif;
+    letter-spacing:.5px;
+    margin-top:2px;
 }
 
 .logo-img{
@@ -284,8 +303,10 @@ font-size:30px;
 
 <a class="logo-link" href="#">
 <img src="images/admaanlogo.jpg" class="logo-img">
-<span>ADMAAN DESIGNS</span>
-<span style="font-size:5px;"><i>We Shape Your Stature</i></span>
+    <div class="logo-text">
+        <span class="logo-title">ADMAAN DESIGNS</span>
+        <span class="logo-tagline">அறம் செய்து பழகு</span>
+    </div>
 </a>
 
 <div class="menu-toggle"
