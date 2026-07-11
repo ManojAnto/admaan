@@ -3,26 +3,70 @@
 <title>ADMAAN DESIGNS | About</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
-body{color:#333}.container{width:90%;max-width:1200px;margin:auto}
+body{color:#333;background:#fafafa}
+.container{width:90%;max-width:1200px;margin:auto}
 header{background:#0d47a1;color:#fff;position:sticky;top:0;z-index:100}
 .navbar{display:flex;justify-content:space-between;align-items:center;padding:15px 0}
 .logo-link{display:flex;align-items:center;color:#fff;text-decoration:none;font-weight:bold;font-size:22px}
 .logo-img{width:55px;height:55px;border-radius:50%;margin-right:10px}
 .menu-toggle{display:none;font-size:28px;cursor:pointer}
-nav ul{display:flex;list-style:none;gap:25px}nav a{color:#fff;text-decoration:none;font-weight:bold}
+nav ul{display:flex;list-style:none;gap:25px}
+nav a{color:#fff;text-decoration:none;font-weight:bold}
 .hero{background:linear-gradient(to right,#0d47a1,#1976d2);color:#fff;padding:80px 0}
-.hero-inner{display:flex;align-items:center;justify-content:center;text-align:center}
-section{padding:60px 0}.grid{display:grid;grid-template-columns:2fr 1fr;gap:20px}
-.card{padding:25px;box-shadow:0 5px 15px rgba(0,0,0,.1);border-radius:10px;transition:.3s}.card:hover{transform:translateY(-8px)}
+.hero-inner{text-align:center}
+section{padding:60px 0}
+.grid{display:grid;grid-template-columns:2fr 1fr;gap:25px}
+.card{background:#fff;padding:30px;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,.08)}
+.overview h2,.why h2{color:#0d47a1;margin-bottom:18px;border-left:5px solid #0d47a1;padding-left:12px}
+.overview p{line-height:1.8;margin-bottom:15px}
+.services{margin-top:20px;background:#f5f9ff;padding:20px;border-radius:10px}
+.services h3{color:#0d47a1;margin-bottom:10px}
+.services ul{columns:2;padding-left:20px;line-height:1.8}
+.why{background:linear-gradient(180deg,#0d47a1,#1976d2);color:#fff}
+.why h2{color:#fff;border-left-color:#fff}
+.why ul{list-style:none;padding:0}
+.why li{padding:12px 0;border-bottom:1px solid rgba(255,255,255,.2)}
+.why li:last-child{border:none}
 footer{background:#0d47a1;color:#fff;text-align:center;padding:20px}
-@media(max-width:768px){.navbar{flex-direction:column;align-items:stretch}.topbar{display:flex;justify-content:space-between;align-items:center}.menu-toggle{display:block}nav{display:none;width:100%}nav.active{display:block}nav ul{flex-direction:column;gap:0}nav a{display:block;padding:14px;text-align:center;border-top:1px solid rgba(255,255,255,.15)}.grid{grid-template-columns:1fr}}
+@media(max-width:768px){
+.navbar{flex-direction:column;align-items:stretch}.topbar{display:flex;justify-content:space-between;align-items:center}.menu-toggle{display:block}
+nav{display:none}nav.active{display:block}nav ul{flex-direction:column;gap:0}nav a{display:block;padding:14px;text-align:center;border-top:1px solid rgba(255,255,255,.15)}
+.grid{grid-template-columns:1fr}.services ul{columns:1}
+}
 </style></head><body>
 <header><div class="container navbar"><div class="topbar">
 <a class="logo-link" href="index.html"><img src="images/admaanlogo.jpg" class="logo-img"><span>ADMAAN DESIGNS</span></a>
 <div class="menu-toggle" onclick="document.getElementById('nav').classList.toggle('active')">&#9776;</div></div>
 <nav id="nav"><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="projects.html">Projects</a></li><li><a href="clients.html">Clients</a></li><li><a href="contact.html">Contact</a></li></ul></nav></div></header>
-<section class="hero"><div class="container hero-inner"><div><h1>About ADMAAN DESIGNS</h1><p>Building Trust Through Quality Construction</p></div></div></section>
+
+<section class="hero"><div class="container hero-inner"><h1>About ADMAAN DESIGNS</h1><p>Building Trust Through Quality Construction</p></div></section>
+
 <section><div class="container"><div class="grid">
-<div class="card"><h2>Company Overview</h2><p>ADMAAN DESIGNS is a professionally managed construction company delivering commercial, industrial and infrastructure projects with quality, integrity and innovation.</p><p>With over <b>10 years of experience</b>, we specialize in planning, designing and executing projects that combine durability, functionality and modern aesthetics. Our experienced engineers, architects and technical team ensure quality workmanship and timely delivery.</p><h3>Our Services</h3><ul><li>Feasibility & Planning</li><li>Architectural & Structural Consulting</li><li>Industrial Structural & MEP Construction</li><li>Industrial Painting & Special Coating</li><li>Industrial Truss & Fabrication</li><li>Interior Designing</li><li>Industrial Procurement</li><li>Industrial Renovation</li><li>Industrial Cleaning Services</li><li>Industrial Flooring</li><li>Road Works, Paver & RCC Flooring</li><li>Chemical & Acid Resistant Flooring</li><li>Civil Manpower Supply</li><li>3D Modeling & Simulations</li><li>BIM Services</li></ul></div>
-<div class="card"><h3>Why Choose Us?</h3><p>✔ 10+ Years Experience</p><p>✔ Skilled Technical Team</p><p>✔ Quality Materials</p><p>✔ On-Time Delivery</p><p>✔ Customer Satisfaction</p></div>
-</div></div></section><footer>© 2026 ADMAAN DESIGNS | We Shape Your Stature</footer></body></html>
+<div class="card overview">
+<h2>Company Overview</h2>
+<p><strong>ADMAAN DESIGNS</strong> is a professionally managed construction company delivering commercial, industrial and infrastructure projects with quality, integrity and innovation.</p>
+<p>With over <strong>10 years of experience</strong>, we specialize in planning, designing and executing projects that combine durability, functionality and modern aesthetics. Our experienced engineers, architects and technical team ensure quality workmanship and timely delivery.</p>
+<div class="services">
+<h3>Our Core Services</h3>
+<ul>
+<li>Feasibility & Planning</li><li>Architectural & Structural Consulting</li><li>Industrial Structural & MEP Construction</li><li>Industrial Painting</li><li>Industrial Truss & Fabrication</li><li>Interior Designing</li><li>Industrial Renovation</li><li>Industrial Flooring</li><li>Road & RCC Flooring</li><li>Chemical Resistant Flooring</li><li>Civil Manpower Supply</li><li>3D Modeling & BIM</li>
+</ul></div>
+</div>
+
+<div class="card why">
+<h2>Why Choose Us?</h2>
+<ul>
+<li>✔ 10+ Years of Experience</li>
+<li>✔ Highly Skilled Technical Team</li>
+<li>✔ Premium Quality Materials</li>
+<li>✔ On-Time Project Delivery</li>
+<li>✔ Modern Construction Techniques</li>
+<li>✔ Transparent Communication</li>
+<li>✔ Customer-Centric Approach</li>
+<li>✔ End-to-End Project Execution</li>
+</ul>
+</div>
+</div></div></section>
+
+<footer>© 2026 ADMAAN DESIGNS | We Shape Your Stature</footer>
+</body></html>
